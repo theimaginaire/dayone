@@ -16,6 +16,8 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/shortcodes.php',   // Theme wrapper class
+  '/lib/class-tgm-plugin-activation.php',   // Check if plugins are installed
+  'lib/plugins.php',   // Theme wrapper class
   'lib/customizer.php' // Theme customizer
 ];
 
@@ -27,3 +29,4 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
