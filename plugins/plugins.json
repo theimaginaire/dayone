@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Advanced Custom Fields",
+        "slug": "advanced-custom-fields",
+        "required": true,
+        "force_activation": true,
+        "force_deactivation": true
+    },
+    {
+        "name": "Types",
+        "slug": "types",
+        "required": true,
+        "force_activation": true,
+        "force_deactivation": true
+    }
+]
