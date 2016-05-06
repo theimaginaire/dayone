@@ -95,6 +95,8 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
+  // Add Google Fonts of choice
+  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto', false, null );
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {

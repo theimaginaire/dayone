@@ -45,6 +45,7 @@ function imaginaire_register_required_plugins() {
             });
          }
     }
+    
 
 	/*
 	 * Array of configuration settings. Amend each line as needed.

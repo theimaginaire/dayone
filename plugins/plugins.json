@@ -12,5 +12,12 @@
         "required": true,
         "force_activation": true,
         "force_deactivation": true
+    },
+    {
+        "name": "Akismet",
+        "slug": "akismet",
+        "required": true,
+        "force_activation": true,
+        "force_deactivation": true
     }
 ]
