@@ -122,13 +122,13 @@ class imaginaire_Admin {
 			'type' => 'text',
 		) );
 		$cmb->add_field( array(
-			'name' => __( 'Locality', 'imaginaire' ),
-			'id'   => 'locality',
+			'name' => __( 'City', 'imaginaire' ),
+			'id'   => 'city',
 			'type' => 'text',
 		) );
 		$cmb->add_field( array(
-			'name' => __( 'City', 'imaginaire' ),
-			'id'   => 'city',
+			'name' => __( 'County', 'imaginaire' ),
+			'id'   => 'county',
 			'type' => 'text',
 		) );
 		$cmb->add_field( array(
