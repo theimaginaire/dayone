@@ -9,7 +9,8 @@
   "dependencies": {
     "bootstrap-sass": "3.3.6",
     "font-awesome": "~4.6.1",
-    "owl.carousel": "owl-carousel2#~2.1.1"
+    "owl.carousel": "owl-carousel2#~2.1.1",
+    "animate.css": "~3.5.1"
   },
   "overrides": {
     "bootstrap-sass": {
