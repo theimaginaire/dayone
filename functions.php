@@ -17,6 +17,7 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/shortcodes.php',   // Shortcodes
   'lib/plugins.php',   // Check required plugins are installed
+  'lib/options-page.php',   // Options Page
   'lib/wp_bootstrap_navwalker.php',   // Navwalker
   'lib/customizer.php' // Theme customizer
 ];
@@ -29,3 +30,11 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+// Load CMB2 for options pages
+if ( file_exists(  __DIR__ . '/cmb2/init.php' ) ) {
+  require_once  __DIR__ . '/cmb2/init.php';
+} elseif ( file_exists(  __DIR__ . '/CMB2/init.php' ) ) {
+  require_once  __DIR__ . '/CMB2/init.php';
+}
+
