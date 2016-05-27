@@ -1,0 +1,10 @@
+From:,"1st May 2016 00:00:00",To:,"31st May 2016 23:59:59"
+Date,Time,Day,"Called Number",Description,CLI,Duration,TTA,Result,Route
+" 10-05-2016"," 08:21:33"," Tue"," 01157401101","office design company"," 01212"," 31"," 0"," Un-Answered"," In Timezone 1 (A, 0) | 01159397572 (U, 31)"
+" 10-05-2016"," 09:01:23"," Tue"," 01157401120","beeston car care"," 07721"," 99"," 6"," Answered"," In Timezone 1 (A, 0) | 01159220843 (A, 98)"
+" 10-05-2016"," 09:05:35"," Tue"," 01246802822","filter services"," 01133"," 28"," 20"," Answered"," In Timezone 1 (A, 0) | 01246455481 (A, 27)"
+" 10-05-2016"," 09:27:23"," Tue"," 03334560304",," 01438"," 39"," 23"," Answered"," In Timezone 1 (A, 0) | 07818878990 (A, 38)"
+" 10-05-2016"," 09:36:25"," Tue"," 03334560304",," 01438"," 30"," 22"," Answered"," In Timezone 1 (A, 0) | 07818878990 (A, 30)"
+" 10-05-2016"," 09:41:47"," Tue"," 01246802822","filter services"," 01914"," 50"," 8"," Answered"," In Timezone 1 (A, 0) | 01246455481 (A, 50)"
+" 10-05-2016"," 09:54:19"," Tue"," 01157401101","office design company"," 01212"," 165"," 12"," Answered"," In Timezone 1 (A, 0) | 01159397572 (A, 165)"
+" 10-05-2016"," 10:05:53"," Tue"," 01246802822","filter services"," 01517"," 37"," 7"," Answered"," In Timezone 1 (A, 0) | 01246455481 (A, 37)"
