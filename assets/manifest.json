@@ -12,6 +12,9 @@
       ],
       "main": true
     },
+    "ignoredDependencies": [
+      "bootstrap"
+    ],
     "customizer.js": {
       "files": [
         "scripts/customizer.js"
