@@ -7,7 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php echo imaginaire_get_option( 'company_name' ); ?></a>
+      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+        <?php 
+        if(get_field('logo', 'options')):
+        ?>
+        <img src="<?php the_field('logo', 'options'); ?>" alt="<?php the_field('company', 'options'); ?>" class="logo" />
+      <?php 
+      else:
+            the_field('company', 'options'); 
+      endif; ?>
+      </a>
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">

@@ -47,6 +47,9 @@ function setup() {
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   // add_editor_style(Assets\asset_path('styles/main.css'));
+
+  // Hide Admin Bar
+  add_filter('show_admin_bar', '__return_false');
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -120,7 +123,7 @@ function display_sidebar() {
  */
 function assets() {
   // Add Google Fonts of choice
-  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Roboto', false, null );
+  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,500,700|Montserrat', false, null );
   wp_enqueue_style('sage/css', Assets\asset_path('styles/main.css'), false, null);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
