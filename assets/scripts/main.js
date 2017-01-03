@@ -19,6 +19,27 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        // Lazy Load for images and background images
+        $(document).ready(function ($) {
+              $("img.lazy").lazyload(
+                  { data_attribute: "orig", effect: "fadeIn" 
+              });
+              $("section.lazy").lazyload({
+                  effect : "fadeIn"
+              });
+              $("div.lazy").lazyload({
+                  effect : "fadeIn"
+              });
+          });
+        $('.owl-carousel').owlCarousel({
+            items:1,
+            lazyLoad:true,
+            loop:false,
+            margin:10,
+            dots: true,
+            nav: true,
+            navText: ["<i class='fa fa-angle-left'>","<i class='fa fa-angle-right'>"] // Sets what appears in the nav boxes
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

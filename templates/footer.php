@@ -14,6 +14,5 @@
     <?php dynamic_sidebar('sidebar-footer-4'); ?>
     </div>
    </div>
-    <?php get_template_part('templates/snippet', 'schema'); ?>
   </div>
 </footer>

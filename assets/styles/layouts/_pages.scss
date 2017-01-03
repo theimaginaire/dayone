@@ -1,0 +1,51 @@
+// Flex for extra sections
+
+.extra {
+	margin: $midspace;
+	display: flex;
+	@include flex-wrap(wrap);
+	width: 100%;
+	.child {
+		display: flex;
+		min-height: 60vh;
+		background-color: $grey;
+		background-size: cover;
+		@include flex-grow(1);
+		@include align-items(center);
+		@include justify-content(center);
+		text-align: center;
+		&:nth-child(odd){
+			background-color: lighten($grey, 10%);
+		}
+		&:nth-child(even){
+			background-color: lighten($grey, 14%);
+		}
+	}
+	// Defined width panels
+	.fw {
+		width: 100%;
+	}
+	.half {
+		width: 50%;
+	}
+	.quarter {
+		width: 25%;
+	}
+	.three-quarters {
+		width: 75%;
+	}
+	.third {
+		width: 33.3%;
+	}
+	.two-thirds {
+		width: 66.6%;
+	}
+}
+
+// MOBILE MEDIA QUERY
+@include MQ(S){
+	.child {
+		width: 100% !important;
+		min-height: 40vh !important;
+	}
+}

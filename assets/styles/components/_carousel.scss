@@ -1,0 +1,83 @@
+.owl-theme {
+	// Styling items
+	.owl-item {
+		min-height: 60vh;
+		background-color: $lightgrey;
+		display: flex;
+		@include align-items(center);
+		@include justify-content(center);
+	}
+
+	// Styling Next and Prev buttons
+	.owl-nav {
+		margin-top: 10px;
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+
+		[class*='owl-'] {
+			position: absolute;
+			color: $text;
+			font-size: 3rem;
+			margin: 10px;
+			padding: 30px;
+			background: none;
+			display: inline-block;
+			cursor: pointer;
+			border-radius: 3px;
+
+			&:hover {
+				background: $grey;
+				color:$text;
+				text-decoration: none;
+			}
+		}
+		.owl-prev {
+			top: 35%;
+			left: 0;
+		}
+		.owl-next {
+			top: 35%;
+			right: 0;
+		}
+		.disabled {
+			opacity: 0.4;
+			cursor: default;
+		}
+	}
+
+	// Styling dots
+	.owl-nav.disabled + .owl-dots {
+		margin-top: 10px;
+	}
+
+	.owl-dots {
+		text-align: center;
+		-webkit-tap-highlight-color: transparent;
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		.owl-dot {
+			display: inline-block;
+			zoom: 1;
+			*display: inline;
+
+			span {
+				width: 10px;
+				height: 10px;
+				margin: 5px;
+				background: $grey;
+				display: block;
+				-webkit-backface-visibility: visible;
+				transition: opacity 200ms ease;
+				border-radius: 30px;
+			}
+
+			&.active,
+			&:hover {
+				span {
+					background: $text;
+				}
+			}
+		}
+	}
+}

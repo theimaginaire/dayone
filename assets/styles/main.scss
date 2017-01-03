@@ -4,6 +4,7 @@
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 @import "common/mixins";
 @import "common/global";
@@ -12,6 +13,7 @@
 @import "components/forms";
 @import "components/grid";
 @import "components/wp-classes";
+@import "components/carousel";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
