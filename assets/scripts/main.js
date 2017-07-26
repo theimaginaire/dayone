@@ -40,6 +40,12 @@
             nav: true,
             navText: ["<i class='fa fa-angle-left'>","<i class='fa fa-angle-right'>"] // Sets what appears in the nav boxes
         });
+        $(".menu-toggle").click(function(){
+          $(".main-navigation").toggleClass("mn-active");
+        });
+        $(".close-i").click(function(){
+          $(".main-navigation").toggleClass("mn-active");
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

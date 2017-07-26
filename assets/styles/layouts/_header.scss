@@ -1,4 +1,149 @@
+// Variables
+
+$h-height: 100px;
+
 .logo {
-	width: calc(515px / 2);
+	width: calc(585px / 2);
 	height: auto;
+}
+.site-header {
+	.left, .right {
+		min-height: $h-height;
+		float: left;
+		display: flex;
+		align-items: center;
+	}
+	.left {
+		
+		width: 30%;
+	}
+	.right {
+		width: 70%;
+		text-align: right;	
+		justify-content: flex-end;
+		.contacts {
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					display: inline-block;
+					&:not(:last-child){
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+		.menu-toggle {
+			display: none;
+			z-index: 110;
+
+		}
+		.mn-active {
+			right: -100vw;
+			opacity: 0;
+		}
+		.main-navigation {
+			z-index: 100;
+			.close-i {
+				display: none;
+				width: 50px;
+				height: 50px;
+				background: none;
+				z-index: 110;
+				.icon-bar {
+					display: block;
+					height: 2px;
+					width: 50px;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.main-navigation, .navbar-nav {
+	float: right !important;
+}
+
+@include MQ(S){
+	body {
+		overflow-x: hidden;
+	}
+	.site-header > .container {
+		padding-right: 0;
+		overflow-x: hidden;
+	}
+	.menu-toggle, .close-i {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		
+		width: 100px;
+		height: 100px;
+		outline: none;
+		border: none;
+	}
+	.close-i {
+		margin-right: 20px;
+	}
+	.logo {
+		width: calc(585px / 4);
+	}
+	.navbar-nav {
+		float: left !important;
+		width: 100%;
+		margin: 0;
+		li {
+			text-align: left;
+		}
+	}
+	.main-navigation {
+		padding: 20px;
+		display: none;
+		position: absolute;
+		width: 100vw;
+		background-color: $darkgrey;
+		opacity: 0;
+		overflow-x: hidden;
+		.close-i {
+			float: right;
+			.icon-bar {
+				&:nth-child(1n){
+					transform: rotate(45deg);
+				}
+				&:nth-child(2n){
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+	.contacts {
+		display: none;
+	}
+	.mn-active {
+		display: block;
+		top: 0;
+		left: 0;
+		opacity: 1 !important;
+		height: 100vh;
+		
+		transition: $ease;
+	}
+	.menu-toggle {
+		background-color: $brand-primary;
+		z-index: 120 !important;
+		&:hover {
+			background-color: $secondary;
+			transition: $ease;
+		}
+		.icon-bar {
+			display: block;
+			height: 2px;
+			width: 30px;
+			background-color: #fff;
+			&:not(:last-child){
+				margin-bottom: 8px;
+			}
+		}
+	}
 }
