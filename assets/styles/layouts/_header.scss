@@ -38,10 +38,7 @@ $h-height: 100px;
 			z-index: 110;
 
 		}
-		.mn-active {
-			right: -100vw;
-			opacity: 0;
-		}
+
 		.main-navigation {
 			z-index: 100;
 			.close-i {
@@ -99,12 +96,13 @@ $h-height: 100px;
 	}
 	.main-navigation {
 		padding: 20px;
-		display: none;
-		position: absolute;
+		position: fixed;
 		width: 100vw;
+		height: 100vh;
+		right: -100vw;
 		background-color: $darkgrey;
 		opacity: 0;
-		overflow-x: hidden;
+		transition: $bezier;
 		.close-i {
 			float: right;
 			.icon-bar {
@@ -121,13 +119,10 @@ $h-height: 100px;
 		display: none;
 	}
 	.mn-active {
-		display: block;
 		top: 0;
-		left: 0;
+		right: 0;
 		opacity: 1 !important;
-		height: 100vh;
-		
-		transition: $ease;
+		transition: $bezier;
 	}
 	.menu-toggle {
 		background-color: $brand-primary;
