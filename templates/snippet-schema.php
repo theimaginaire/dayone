@@ -1,9 +1,25 @@
-<div itemscope itemtype="http://schema.org/LocalBusiness">
-   <span itemprop="name"><?php echo imaginaire_get_option('company_name'); ?></span>
-   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-     <span itemprop="streetAddress"><?php echo imaginaire_get_option('street'); ?></span>,
-     <span itemprop="addressLocality"><?php echo imaginaire_get_option('city'); ?></span>,
-     <span itemprop="addressRegion"><?php echo imaginaire_get_option('county'); ?></span>,
-     <span itemprop="postalCode"><?php echo imaginaire_get_option('postcode'); ?></span>
-   </div>
-</div>
+<script type="application/ld+json">
+	{
+  	"@context": "http://schema.org",
+  	"@type": "LocalBusiness",
+  	"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "<?php the_field('street_2', 'options'); ?>",
+    "addressRegion": "<?php the_field('towncity', 'options'); ?>",
+    "postalCode":"<?php the_field('postcode', 'options'); ?>",
+    "streetAddress": "<?php the_field('street', 'options'); ?>"
+  	},
+  	"description": "<?php the_field('company_description', 'options'); ?>",
+  	"name": "<?php the_field('company', 'options'); ?>",
+  	"telephone": "<?php the_field('phone', 'options'); ?>",
+  	"openingHours": "Mo,Tu,We,Th,Fr 08:30-17:30",
+  	"geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "52.9245300565903",
+    "longitude": "-1.2882369220901637"
+ 		}, 			
+  	"sameAs" : [ "<?php the_field('facebook', 'options'); ?>",
+    "<?php the_field('twitter', 'options'); ?>",
+    "<?php the_field('google', 'options'); ?>"]
+	}
+</script>
