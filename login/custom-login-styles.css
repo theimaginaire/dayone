@@ -1,0 +1,51 @@
+body.login {
+  background-color: #50555e;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.login h1 a {
+  background-image: url('../dist/images/imaginaire.png');
+  width: 225px;
+  height: 40px;
+  background-size: 100%;
+}
+.login form {
+	padding: 40px;
+}
+
+.login .message {
+	background-color: #29abe1;
+	color: #fff;
+	border: none;
+	text-align: center;
+}
+.login #nav, .login #backtoblog {
+	text-align: center;
+}
+.login #nav a, .login #backtoblog a {
+	color: #fff;
+	border-bottom: 1px dotted #fff;	
+}
+.login #nav a:hover, .login #backtoblog a:hover {
+	color: #eee;
+}
+.login #login_error {
+	border: none;
+	background-color: #dc3232;
+	color: #fff;
+	text-align: center;
+}
+.login #login_error a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+.wp-core-ui .button-primary, .login .button-primary {
+	border: none;
+	border-radius: 0;
+	background: #588f27;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: none;
+}
